@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>USTC AGI · Time Series Research Directory</title>
+    <meta
+      name="description"
+      content="Time series research highlights from USTC AGI, spanning classification, forecasting, self-supervised learning, and comprehensive surveys."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./ref.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <div class="logo">USTC AGI · Time Series Lab</div>
+        <div class="nav-links">
+          <a href="#projects">Research</a>
+          <a href="#highlights">Timeline</a>
+          <a href="#resources">Directions</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+      <div class="hero-content">
+        <p class="eyebrow">Time Series Initiative</p>
+        <h1>Advancing Time Series Analysis with Modern AI</h1>
+        <p class="hero-subtitle">
+          We develop cutting-edge methods for time series classification and forecasting, 
+          leveraging multimodal language modeling, self-supervised learning, and reasoning-based 
+          approaches to push the boundaries of temporal data understanding.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">Explore Projects</a>
+          <a class="btn ghost" href="https://github.com/USTCAGI" target="_blank"
+            >GitHub</a
+          >
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-card">
+          <span class="stat-value">18+</span>
+          <span class="stat-label">Research Papers</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">WSDM Best</span>
+          <span class="stat-label">🏆 Paper Award</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">ICML, NeurIPS, KDD, WWW</span>
+          <span class="stat-label">Top-tier Venues</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">2023-2026</span>
+          <span class="stat-label">Research Timeline</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="projects" class="section research">
+        <div class="section-header">
+          <p class="eyebrow">Research Projects</p>
+          <h2>Time Series Classification & Forecasting</h2>
+          <p>
+            Our research spans multiple directions: multimodal language modeling for classification, 
+            reasoning-based forecasting, self-supervised representation learning, and comprehensive surveys.
+          </p>
+        </div>
+        
+        <!-- Time Series Classification Section -->
+        <div style="margin-bottom: 3rem;">
+          <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--text);">Time Series Classification</h3>
+          <div class="research-grid">
+            <article
+              class="card focus"
+              data-link="https://arxiv.org/abs/2601.14968"
+              tabindex="0"
+            >
+              <img src="assert/instructtime++.png" alt="InstructTime++" class="card-image" />
+              <h3>InstructTime++ · Preprint</h3>
+              <p>
+                Extends InstructTime with implicit feature enhancement via statistical feature extraction 
+                and vision-language-based image captioning for superior classification performance.
+              </p>
+              <a href="https://arxiv.org/abs/2601.14968" target="_blank">Paper →</a>
+            </article>
+            <article
+              class="card focus"
+              data-link="https://arxiv.org/abs/2403.12371"
+              tabindex="0"
+            >
+              <img src="assert/instructtime.png" alt="InstructTime" class="card-image" />
+              <h3>InstructTime · WSDM 2025 (Best of WSDM)</h3>
+              <p>
+                Reformulates time series classification as a multimodal generative task, converting 
+                continuous sequences into discrete tokens and leveraging pre-trained language models.
+              </p>
+              <a href="https://arxiv.org/abs/2403.12371" target="_blank">Paper →</a>
+            </article>
+            <article
+              class="card focus"
+              data-link="https://arxiv.org/abs/2411.15737"
+              tabindex="0"
+            >
+              <img src="assert/tabletime.png" alt="TableTime" class="card-image" />
+              <h3>TableTime · CIKM 2025</h3>
+              <p>
+                Reformulates multivariate time series classification as zero-shot table understanding 
+                via large language models, minimizing information loss through tabular representation.
+              </p>
+              <a href="https://arxiv.org/abs/2411.15737" target="_blank">Paper →</a>
+            </article>
+            <article
+              class="card focus"
+              data-link="https://arxiv.org/abs/2303.00320"
+              tabindex="0"
+            >
+              <img src="assert/timemae.png" alt="TimeMAE" class="card-image" />
+              <h3>TimeMAE · WSDM 2026</h3>
+              <p>
+                Self-supervised representation learning with decoupled masked autoencoders, learning 
+                enriched contextual representations through bidirectional encoding over sub-series.
+              </p>
+              <a href="https://arxiv.org/abs/2303.00320" target="_blank">Paper →</a>
+            </article>
+            <article
+              class="card focus"
+              data-link="https://arxiv.org/abs/2403.01493"
+              tabindex="0"
+            >
+              <img src="assert/convtimenet.png" alt="ConvTimeNet" class="card-image" />
+              <h3>ConvTimeNet · WWW 2025</h3>
+              <p>
+                Hierarchical fully convolutional model with deformable patch layers for adaptive 
+                perception of local patterns and multi-scale dependency modeling.
+              </p>
+              <a href="https://arxiv.org/abs/2403.01493" target="_blank">Paper →</a>
+            </article>
+            <article
+              class="card focus"
+              data-link="https://arxiv.org/abs/2302.09818"
+              tabindex="0"
+            >
+              <img src="assert/formertime.png" alt="FormerTime" class="card-image" />
+              <h3>FormerTime · WWW 2023</h3>
+              <p>
+                Hierarchical multi-scale representation for multivariate time series classification, 
+                capturing temporal dependencies at multiple granularities.
+              </p>
+              <a href="https://arxiv.org/abs/2302.09818" target="_blank">Paper →</a>
+            </article>
+          </div>
+        </div>
+
+        <!-- Time Series Forecasting Section -->
+        <div style="margin-bottom: 3rem;">
+          <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--text);">Time Series Forecasting</h3>
+          <div class="research-grid">
+            <article
+              class="card focus"
+              data-link="https://arxiv.org/abs/2511.08947"
+              tabindex="0"
+            >
+              <img src="assert/castmind.png" alt="CastMind" class="card-image" />
+              <h3>CastMind</h3>
+              <p>
+                Interaction-driven agentic reasoning framework for cognition-inspired forecasting, 
+                organizing prediction into multi-stage workflow with context preparation and reflective evaluation.
+              </p>
+              <a href="https://arxiv.org/abs/2511.08947" target="_blank">Paper →</a>
+            </article>
+            <article
+              class="card focus"
+              data-link="#"
+              tabindex="0"
+            >
+              <img src="assert/memcast.png" alt="MemCast" class="card-image" />
+              <h3>MemCast</h3>
+              <p>
+                Memory-driven forecasting with experience-conditioned reasoning, learning historical patterns, 
+                reasoning wisdom, and general laws from training data.
+              </p>
+              <a href="https://anonymous.4open.science/r/MemCast" target="_blank">Code →</a>
+            </article>
+            <article
+              class="card focus"
+              data-link="https://arxiv.org/abs/2506.10630"
+              tabindex="0"
+            >
+              <img src="assert/time-r1.png" alt="Time-R1" class="card-image" />
+              <h3>Time-R1</h3>
+              <p>
+                Slow-thinking approach with reinforced LLMs for time series forecasting, employing 
+                two-stage reinforcement fine-tuning to enhance multi-step reasoning ability.
+              </p>
+              <a href="https://arxiv.org/abs/2506.10630" target="_blank">Paper →</a>
+            </article>
+            <article
+              class="card focus"
+              data-link="https://arxiv.org/abs/2508.09191"
+              tabindex="0"
+            >
+              <img src="assert/tokencast.png" alt="TokenCast" class="card-image" />
+              <h3>TokenCast</h3>
+              <p>
+                LLM-driven framework for context-aware forecasting via symbolic discretization, 
+                transforming continuous sequences into temporal tokens for unified representation.
+              </p>
+              <a href="https://arxiv.org/abs/2508.09191" target="_blank">Paper →</a>
+            </article>
+            <article
+              class="card focus"
+              data-link="https://arxiv.org/abs/2505.24511"
+              tabindex="0"
+            >
+              <img src="assert/timereasoner.png" alt="TimeReasoner" class="card-image" />
+              <h3>TimeReasoner · WSDM 2026</h3>
+              <p>
+                Empirical study on slow-thinking LLMs reasoning over temporal patterns, demonstrating 
+                non-trivial zero-shot forecasting capabilities in capturing trends and contextual shifts.
+              </p>
+              <a href="https://arxiv.org/abs/2505.24511" target="_blank">Paper →</a>
+            </article>
+            <article
+              class="card focus"
+              data-link="https://arxiv.org/abs/2410.05711"
+              tabindex="0"
+            >
+              <img src="assert/timedart.png" alt="TimeDART" class="card-image" />
+              <h3>TimeDART · ICML 2025</h3>
+              <p>
+                Diffusion autoregressive transformer for self-supervised time series representation, 
+                unifying causal transformer encoding with denoising diffusion for global and local patterns.
+              </p>
+              <a href="https://arxiv.org/abs/2410.05711" target="_blank">Paper →</a>
+            </article>
+            <article
+              class="card focus"
+              data-link="https://arxiv.org/abs/2505.23583"
+              tabindex="0"
+            >
+              <img src="assert/PIR.png" alt="PIR" class="card-image" />
+              <h3>PIR · NeurIPS 2025</h3>
+              <p>
+                Instance-aware post-hoc revision framework for improving forecasting via identification 
+                and revision of biased instances using contextual information.
+              </p>
+              <a href="https://arxiv.org/abs/2505.23583" target="_blank">Paper →</a>
+            </article>
+            <article
+              class="card focus"
+              data-link="https://arxiv.org/abs/2402.16516"
+              tabindex="0"
+            >
+              <img src="assert/gpht.png" alt="GPHT" class="card-image" />
+              <h3>GPHT · SIGKDD 2024</h3>
+              <p>
+                Generative pretrained hierarchical transformer for forecasting, employing mixed dataset 
+                pretraining and autoregressive generation for arbitrary horizon settings.
+              </p>
+              <a href="https://arxiv.org/abs/2402.16516" target="_blank">Paper →</a>
+            </article>
+            <article
+              class="card focus"
+              data-link="https://proceedings.neurips.cc/paper_files/paper/2023/hash/2e19dab94882bc95ed094c4399cfda02-Abstract-Conference.html"
+              tabindex="0"
+            >
+              <img src="assert/san.png" alt="SAN" class="card-image" />
+              <h3>SAN · NeurIPS 2023</h3>
+              <p>
+                Adaptive normalization for non-stationary time series forecasting from a temporal slice 
+                perspective, eliminating non-stationarity at local slice level.
+              </p>
+              <a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/2e19dab94882bc95ed094c4399cfda02-Abstract-Conference.html" target="_blank">Paper →</a>
+            </article>
+          </div>
+        </div>
+
+        <!-- Survey Section -->
+        <div>
+          <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--text);">Survey</h3>
+          <div class="research-grid">
+            <article
+              class="card focus"
+              data-link="https://arxiv.org/abs/2411.05793"
+              tabindex="0"
+            >
+              <img src="assert/survey.png" alt="Time Series Survey" class="card-image" />
+              <h3>A Comprehensive Survey of Time Series Forecasting · Preprint</h3>
+              <p>
+                Comprehensive analysis covering concepts, challenges, and future directions, including 
+                architectural diversification, hybrid models, diffusion models, and foundation models.
+              </p>
+              <a href="https://arxiv.org/abs/2411.05793" target="_blank">Paper →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="highlights" class="section highlights">
+        <div class="section-header">
+          <p class="eyebrow">Timeline</p>
+          <h2>Milestones in Time Series Research</h2>
+        </div>
+        <div class="timeline">
+          <article class="milestone">
+            <div>
+              <p class="milestone-year">2023</p>
+              <h3>SAN · NeurIPS 2023</h3>
+              <p>
+                Introduced adaptive normalization for non-stationary time series forecasting, 
+                addressing distribution shifts through temporal slice-level normalization.
+              </p>
+            </div>
+            <a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/2e19dab94882bc95ed094c4399cfda02-Abstract-Conference.html" target="_blank">Paper →</a>
+          </article>
+          <article class="milestone">
+            <div>
+              <p class="milestone-year">2023</p>
+              <h3>FormerTime · WWW 2023</h3>
+              <p>
+                Proposed hierarchical multi-scale representation for multivariate time series 
+                classification, establishing foundation for multi-granularity temporal modeling.
+              </p>
+            </div>
+            <a href="https://arxiv.org/abs/2302.09818" target="_blank">Paper →</a>
+          </article>
+          <article class="milestone">
+            <div>
+              <p class="milestone-year">2024</p>
+              <h3>GPHT · SIGKDD 2024</h3>
+              <p>
+                Developed generative pretrained hierarchical transformer enabling single model 
+                for arbitrary horizon forecasting through mixed dataset pretraining.
+              </p>
+            </div>
+            <a href="https://arxiv.org/abs/2402.16516" target="_blank">Paper →</a>
+          </article>
+          <article class="milestone">
+            <div>
+              <p class="milestone-year">2025</p>
+              <h3>InstructTime · WSDM 2025 (Best of WSDM)</h3>
+              <p>
+                Awarded Best of WSDM for reformulating classification as multimodal generative task, 
+                demonstrating potential for universal foundation models in time series.
+              </p>
+            </div>
+            <a href="https://arxiv.org/abs/2403.12371" target="_blank">Paper →</a>
+          </article>
+          <article class="milestone">
+            <div>
+              <p class="milestone-year">2025</p>
+              <h3>TimeDART · ICML 2025</h3>
+              <p>
+                Unified diffusion and autoregressive paradigms for self-supervised representation 
+                learning, capturing both global trends and local patterns.
+              </p>
+            </div>
+            <a href="https://arxiv.org/abs/2410.05711" target="_blank">Paper →</a>
+          </article>
+          <article class="milestone">
+            <div>
+              <p class="milestone-year">2025</p>
+              <h3>TableTime · CIKM 2025</h3>
+              <p>
+                Enabled zero-shot classification through table understanding reformulation, 
+                achieving natural alignment with LLM semantic space.
+              </p>
+            </div>
+            <a href="https://arxiv.org/abs/2411.15737" target="_blank">Paper →</a>
+          </article>
+          <article class="milestone">
+            <div>
+              <p class="milestone-year">2025</p>
+              <h3>PIR · NeurIPS 2025</h3>
+              <p>
+                Model-agnostic framework for instance-aware post-hoc revision, effectively 
+                mitigating instance-level errors in forecasting.
+              </p>
+            </div>
+            <a href="https://arxiv.org/abs/2505.23583" target="_blank">Paper →</a>
+          </article>
+          <article class="milestone">
+            <div>
+              <p class="milestone-year">2025</p>
+              <h3>ConvTimeNet · WWW 2025</h3>
+              <p>
+                Demonstrated viability of pure convolutional models with hierarchical architecture 
+                and deformable patch layers for time series analysis.
+              </p>
+            </div>
+            <a href="https://arxiv.org/abs/2403.01493" target="_blank">Paper →</a>
+          </article>
+          <article class="milestone">
+            <div>
+              <p class="milestone-year">2026</p>
+              <h3>TimeMAE · WSDM 2026</h3>
+              <p>
+                Advanced self-supervised learning with decoupled masked autoencoders, learning 
+                transferable representations through bidirectional encoding.
+              </p>
+            </div>
+            <a href="https://arxiv.org/abs/2303.00320" target="_blank">Paper →</a>
+          </article>
+          <article class="milestone">
+            <div>
+              <p class="milestone-year">2026</p>
+              <h3>TimeReasoner · WSDM 2026</h3>
+              <p>
+                Empirical study revealing slow-thinking LLMs' capabilities in temporal reasoning, 
+                paving way for reasoning-based forecasting paradigms.
+              </p>
+            </div>
+            <a href="https://arxiv.org/abs/2505.24511" target="_blank">Paper →</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="resources" class="section resources">
+        <div class="section-header">
+          <p class="eyebrow">Resources</p>
+          <h2>Research Directions & Contributions</h2>
+        </div>
+        <div class="resource-grid">
+          <article class="card resource">
+            <h3>Multimodal Language Modeling</h3>
+            <p>
+              Converting time series to discrete tokens and leveraging pre-trained language models 
+              for classification and forecasting tasks.
+            </p>
+          </article>
+          <article class="card resource">
+            <h3>Reasoning-Based Forecasting</h3>
+            <p>
+              Slow-thinking approaches and agentic reasoning frameworks that enable multi-step 
+              reasoning over temporal patterns.
+            </p>
+          </article>
+          <article class="card resource">
+            <h3>Self-Supervised Learning</h3>
+            <p>
+              Masked autoencoders, diffusion models, and hierarchical transformers for learning 
+              transferable time series representations.
+            </p>
+          </article>
+          <article class="card resource">
+            <h3>Comprehensive Surveys</h3>
+            <p>
+              In-depth analysis of time series forecasting concepts, challenges, architectural 
+              trends, and future directions.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section vision">
+        <div class="vision-content">
+          <h2>Advancing Time Series Understanding</h2>
+          <p>
+            We explore novel paradigms for time series analysis, from multimodal language modeling 
+            to reasoning-based forecasting. Our research addresses fundamental challenges in temporal 
+            data understanding, including non-stationarity, long-term dependencies, and contextual integration.
+          </p>
+        </div>
+        <div class="vision-points">
+          <div>
+            <h3>Multimodal Integration</h3>
+            <p>
+              Bridging numerical sequences with contextual features through symbolic discretization 
+              and alignment strategies for enhanced understanding.
+            </p>
+          </div>
+          <div>
+            <h3>Reasoning Capabilities</h3>
+            <p>
+              Developing slow-thinking approaches and memory-driven frameworks that enable explicit 
+              reasoning over temporal dynamics and dependencies.
+            </p>
+          </div>
+          <div>
+            <h3>Transferable Representations</h3>
+            <p>
+              Self-supervised learning methods that learn generalizable patterns across diverse 
+              time series domains and applications.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="footer">
+      <div>
+        <p class="eyebrow">Connect</p>
+        <h3>Work with the USTC AGI Time Series Group</h3>
+        <p>
+          We welcome collaborations on time series classification, forecasting, representation learning, 
+          and related research directions.
+        </p>
+      </div>
+      <div class="footer-actions">
+        <a class="btn primary" href="mailto:mycheng@ustc.edu.cn">Email Us</a>
+        <a class="btn ghost" href="https://github.com/USTCAGI" target="_blank"
+          >GitHub</a
+        >
+      </div>
+      <p class="footer-note">
+        © <span id="year"></span> USTC AGI · Licensed under
+        <a
+          href="http://creativecommons.org/licenses/by-sa/4.0/"
+          target="_blank"
+          rel="license"
+          >CC BY-SA 4.0</a
+        >.
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      document.querySelectorAll(".card[data-link]").forEach((card) => {
+        const openLink = () => {
+          const target = card.dataset.link;
+          if (target && target !== "#") {
+            window.open(target, "_blank", "noopener");
+          }
+        };
+
+        card.addEventListener("click", (event) => {
+          if (event.target.closest("a")) return;
+          openLink();
+        });
+
+        card.addEventListener("keydown", (event) => {
+          if (event.key === "Enter" && !event.target.closest("a")) {
+            openLink();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
