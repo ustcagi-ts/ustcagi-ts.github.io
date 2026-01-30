@@ -15,6 +15,7 @@ We develop cutting-edge methods for time series analysis, leveraging:
 ### Time Series Classification
 - InstructTime++: Multimodal language modeling with implicit feature enhancement
 - InstructTime: Learning-to-generate paradigm for classification (WSDM 2025 Best Paper)
+- HiTime: Hierarchical multimodal LLMs with semantic space alignment for time series classification (ACM TIST, Accepted Nov 2025)
 - TableTime: Zero-shot classification via table understanding (CIKM 2025)
 - TimeMAE: Self-supervised representation with decoupled masked autoencoders (WSDM 2026)
 - ConvTimeNet: Hierarchical fully convolutional model (WWW 2025)
