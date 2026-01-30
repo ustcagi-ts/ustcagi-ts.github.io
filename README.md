@@ -24,6 +24,7 @@ We develop cutting-edge methods for time series analysis, leveraging:
 
 ### Time Series Forecasting
 - CastMind: Interaction-driven agentic reasoning framework
+- OneCast: Structured decomposition and modular generation for cross-domain time series forecasting
 - MemCast: Memory-driven forecasting with experience-conditioned reasoning
 - Time-R1: Slow-thinking approach with reinforced LLMs
 - TokenCast: Context-aware forecasting via symbolic discretization
