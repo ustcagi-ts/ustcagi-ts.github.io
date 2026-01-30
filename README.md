@@ -27,6 +27,8 @@ We develop cutting-edge methods for time series analysis, leveraging:
 - TokenCast: Context-aware forecasting via symbolic discretization
 - TimeReasoner: Empirical studies on slow-thinking LLMs (WSDM 2026)
 - TimeDART: Diffusion autoregressive transformer (ICML 2025)
+- FDF: Flexible decoupled framework, conditional denoising + polynomial modeling for trend-seasonal forecasting (IJCAI 2025)
+- HMF: Hybrid multi-factor network with dynamic sequence modeling for early warning of intraoperative hypotension (IJCAI 2025)
 - PIR: Instance-aware post-hoc revision (NeurIPS 2025)
 - GPHT: Generative pretrained hierarchical transformer (SIGKDD 2024)
 - SAN: Adaptive normalization for non-stationary forecasting (NeurIPS 2023)
