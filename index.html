@@ -1,737 +1,657 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>USTC AGI · Time Series Research Directory</title>
-    <meta
-      name="description"
-      content="Time series research highlights from USTC AGI, spanning classification, forecasting, self-supervised learning, and comprehensive surveys."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./ref.css" />
-  </head>
-  <body>
-    <header class="hero">
-      <nav class="nav">
-        <div class="logo">USTC AGI · Time Series Lab</div>
-        <div class="nav-links">
-          <a href="#projects">Research</a>
-          <a href="#highlights">Timeline</a>
-          <a href="#resources">Directions</a>
-          <a href="#contact">Contact</a>
-        </div>
+<html lang="zh-CN" data-lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>时间序列分析方向 · 中国科学技术大学</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-lang="zh">
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container">
+      <div class="site-logo">
+        <span class="zh">时间序列分析方向</span>
+        <span class="en">Time Series Analysis</span>
+      </div>
+      <nav class="site-nav">
+        <a href="#news"><span class="zh">动态</span><span class="en">News</span></a>
+        <a href="#research"><span class="zh">研究方向</span><span class="en">Research</span></a>
+        <a href="#publications"><span class="zh">论文</span><span class="en">Publications</span></a>
+        <a href="#opensource"><span class="zh">开源</span><span class="en">Open Source</span></a>
+        <a href="#funding"><span class="zh">经费</span><span class="en">Funding</span></a>
+        <button class="lang-btn" id="langToggle">EN</button>
       </nav>
-      <div class="hero-content">
-        <p class="eyebrow">Time Series Initiative</p>
-        <h1>Advancing Time Series Analysis with Modern AI</h1>
-        <p class="hero-subtitle">
-          We develop cutting-edge methods for time series classification and forecasting, 
-          leveraging multimodal language modeling, self-supervised learning, and reasoning-based 
-          approaches to push the boundaries of temporal data understanding.
-        </p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#projects">Explore Projects</a>
-          <a class="btn ghost" href="https://github.com/USTCAGI" target="_blank"
-            >GitHub</a
-          >
-        </div>
-      </div>
-      <div class="hero-stats">
-        <div class="stat-card">
-          <span class="stat-value">21</span>
-          <span class="stat-label">Research Papers</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-value">Best of WSDM</span>
-          <span class="stat-label">🏆 Paper Award</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-value">ICML, NeurIPS, KDD, WWW, IJCAI, ACM TIST</span>
-          <span class="stat-label">Top-tier Venues</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-value">2023-2026</span>
-          <span class="stat-label">Research Timeline</span>
-        </div>
-      </div>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <section id="projects" class="section research">
-        <div class="section-header">
-          <p class="eyebrow">Research Projects</p>
-          <h2>Time Series Classification & Forecasting</h2>
-          <p>
-            Our research spans multiple directions: multimodal language modeling for classification, 
-            reasoning-based forecasting, self-supervised representation learning, and comprehensive surveys.
-          </p>
-        </div>
-        
-        <!-- Time Series Classification Section -->
-        <div style="margin-bottom: 3rem;">
-          <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--text);">Time Series Classification</h3>
-          <div class="research-grid">
-            <article
-              class="card focus"
-              data-link="https://arxiv.org/abs/2601.14968"
-              tabindex="0"
-            >
-              <img src="assert/instructtime++.png" alt="InstructTime++" class="card-image" />
-              <h3>InstructTime++ · Preprint</h3>
-              <p>
-                Extends InstructTime with implicit feature enhancement via statistical feature extraction 
-                and vision-language-based image captioning for superior classification performance.
-              </p>
-              <a href="https://arxiv.org/abs/2601.14968" target="_blank">Paper →</a>
-            </article>
-            <article
-              class="card focus"
-              data-link="https://arxiv.org/abs/2403.12371"
-              tabindex="0"
-            >
-              <img src="assert/instructtime.png" alt="InstructTime" class="card-image" />
-              <h3>InstructTime · WSDM 2025 (Best of WSDM)</h3>
-              <p>
-                Reformulates time series classification as a multimodal generative task, converting 
-                continuous sequences into discrete tokens and leveraging pre-trained language models.
-              </p>
-              <a href="https://arxiv.org/abs/2403.12371" target="_blank">Paper →</a>
-            </article>
-            <article
-              class="card focus"
-              data-link="https://dl.acm.org/doi/abs/10.1145/3785505"
-              tabindex="0"
-            >
-              <img src="assert/HiTime.png" alt="HiTime" class="card-image" />
-              <h3>HiTime · ACM TIST</h3>
-              <p>
-                Hierarchical multimodal LLMs with semantic space alignment for time series classification: 
-                hierarchical sequence encoding, coarse-to-fine cross-modal alignment, and generative 
-                classification via parameter-efficient fine-tuning.
-              </p>
-              <a href="https://dl.acm.org/doi/abs/10.1145/3785505" target="_blank">Paper →</a>
-            </article>
-            <article
-              class="card focus"
-              data-link="https://arxiv.org/abs/2411.15737"
-              tabindex="0"
-            >
-              <img src="assert/tabletime.png" alt="TableTime" class="card-image" />
-              <h3>TableTime · CIKM 2025</h3>
-              <p>
-                Reformulates multivariate time series classification as zero-shot table understanding 
-                via large language models, minimizing information loss through tabular representation.
-              </p>
-              <a href="https://arxiv.org/abs/2411.15737" target="_blank">Paper →</a>
-            </article>
-            <article
-              class="card focus"
-              data-link="https://arxiv.org/abs/2303.00320"
-              tabindex="0"
-            >
-              <img src="assert/timemae.png" alt="TimeMAE" class="card-image" />
-              <h3>TimeMAE · WSDM 2026</h3>
-              <p>
-                Self-supervised representation learning with decoupled masked autoencoders, learning 
-                enriched contextual representations through bidirectional encoding over sub-series.
-              </p>
-              <a href="https://arxiv.org/abs/2303.00320" target="_blank">Paper →</a>
-            </article>
-            <article
-              class="card focus"
-              data-link="https://github.com/Mingyue-Cheng/CrossTimeNet"
-              tabindex="0"
-            >
-              <img src="assert/CrossTimeNet.png" alt="CrossTimeNet" class="card-image" />
-              <h3>CrossTimeNet · WSDM 2025</h3>
-              <p>
-                Cross-domain self-supervised pre-training with language models for transferable time series 
-                representations; vector quantization tokenization and corrupted-region recovery for 
-                classification and forecasting downstream tasks.
-              </p>
-              <a href="https://github.com/Mingyue-Cheng/CrossTimeNet" target="_blank">Code →</a>
-            </article>
-            <article
-              class="card focus"
-              data-link="https://arxiv.org/abs/2403.01493"
-              tabindex="0"
-            >
-              <img src="assert/convtimenet.png" alt="ConvTimeNet" class="card-image" />
-              <h3>ConvTimeNet · WWW 2025</h3>
-              <p>
-                Hierarchical fully convolutional model with deformable patch layers for adaptive 
-                perception of local patterns and multi-scale dependency modeling.
-              </p>
-              <a href="https://arxiv.org/abs/2403.01493" target="_blank">Paper →</a>
-            </article>
-            <article
-              class="card focus"
-              data-link="https://arxiv.org/abs/2302.09818"
-              tabindex="0"
-            >
-              <img src="assert/formertime.png" alt="FormerTime" class="card-image" />
-              <h3>FormerTime · WWW 2023</h3>
-              <p>
-                Hierarchical multi-scale representation for multivariate time series classification, 
-                capturing temporal dependencies at multiple granularities.
-              </p>
-              <a href="https://arxiv.org/abs/2302.09818" target="_blank">Paper →</a>
-            </article>
-          </div>
-        </div>
-
-        <!-- Time Series Forecasting Section -->
-        <div style="margin-bottom: 3rem;">
-          <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--text);">Time Series Forecasting</h3>
-          <div class="research-grid">
-            <article
-              class="card focus"
-              data-link="https://arxiv.org/abs/2511.08947"
-              tabindex="0"
-            >
-              <img src="assert/castmind.png" alt="CastMind" class="card-image" />
-              <h3>CastMind</h3>
-              <p>
-                Interaction-driven agentic reasoning framework for cognition-inspired forecasting, 
-                organizing prediction into multi-stage workflow with context preparation and reflective evaluation.
-              </p>
-              <a href="https://arxiv.org/abs/2511.08947" target="_blank">Paper →</a>
-            </article>
-            <article
-              class="card focus"
-              data-link="https://arxiv.org/abs/2510.24028"
-              tabindex="0"
-            >
-              <img src="assert/OneCast.png" alt="OneCast" class="card-image" />
-              <h3>OneCast</h3>
-              <p>
-                Structured decomposition and modular generation for cross-domain time series forecasting: 
-                decomposes into seasonal (lightweight projection with basis functions) and trend (semantic-aware 
-                tokenizer + masked discrete diffusion) components for generalization across domains.
-              </p>
-              <a href="https://arxiv.org/abs/2510.24028" target="_blank">Paper →</a>
-            </article>
-            <article
-              class="card focus"
-              data-link="#"
-              tabindex="0"
-            >
-              <img src="assert/memcast.png" alt="MemCast" class="card-image" />
-              <h3>MemCast</h3>
-              <p>
-                Memory-driven forecasting with experience-conditioned reasoning, learning historical patterns, 
-                reasoning wisdom, and general laws from training data.
-              </p>
-              <a href="https://anonymous.4open.science/r/MemCast" target="_blank">Code →</a>
-            </article>
-            <article
-              class="card focus"
-              data-link="https://arxiv.org/abs/2506.10630"
-              tabindex="0"
-            >
-              <img src="assert/time-r1.png" alt="Time-R1" class="card-image" />
-              <h3>Time-R1</h3>
-              <p>
-                Slow-thinking approach with reinforced LLMs for time series forecasting, employing 
-                two-stage reinforcement fine-tuning to enhance multi-step reasoning ability.
-              </p>
-              <a href="https://arxiv.org/abs/2506.10630" target="_blank">Paper →</a>
-            </article>
-            <article
-              class="card focus"
-              data-link="https://arxiv.org/abs/2508.09191"
-              tabindex="0"
-            >
-              <img src="assert/tokencast.png" alt="TokenCast" class="card-image" />
-              <h3>TokenCast</h3>
-              <p>
-                LLM-driven framework for context-aware forecasting via symbolic discretization, 
-                transforming continuous sequences into temporal tokens for unified representation.
-              </p>
-              <a href="https://arxiv.org/abs/2508.09191" target="_blank">Paper →</a>
-            </article>
-            <article
-              class="card focus"
-              data-link="https://arxiv.org/abs/2505.24511"
-              tabindex="0"
-            >
-              <img src="assert/timereasoner.png" alt="TimeReasoner" class="card-image" />
-              <h3>TimeReasoner · WSDM 2026</h3>
-              <p>
-                Empirical study on slow-thinking LLMs reasoning over temporal patterns, demonstrating 
-                non-trivial zero-shot forecasting capabilities in capturing trends and contextual shifts.
-              </p>
-              <a href="https://arxiv.org/abs/2505.24511" target="_blank">Paper →</a>
-            </article>
-            <article
-              class="card focus"
-              data-link="https://arxiv.org/abs/2410.05711"
-              tabindex="0"
-            >
-              <img src="assert/timedart.png" alt="TimeDART" class="card-image" />
-              <h3>TimeDART · ICML 2025</h3>
-              <p>
-                Diffusion autoregressive transformer for self-supervised time series representation, 
-                unifying causal transformer encoding with denoising diffusion for global and local patterns.
-              </p>
-              <a href="https://arxiv.org/abs/2410.05711" target="_blank">Paper →</a>
-            </article>
-            <article
-              class="card focus"
-              data-link="https://arxiv.org/abs/2410.13253"
-              tabindex="0"
-            >
-              <img src="assert/FDF.png" alt="FDF" class="card-image" />
-              <h3>FDF · IJCAI 2025</h3>
-              <p>
-                Flexible decoupled framework that decomposes time series into trend and seasonal components, 
-                employing conditional denoising (diffusion) for the fluctuating seasonal part and 
-                enhanced linear models for the smooth trend, trained end-to-end.
-              </p>
-              <a href="https://arxiv.org/abs/2410.13253" target="_blank">Paper →</a>
-            </article>
-            <article
-              class="card focus"
-              data-link="https://arxiv.org/abs/2409.11064"
-              tabindex="0"
-            >
-              <img src="assert/HMF.png" alt="HMF" class="card-image" />
-              <h3>HMF · IJCAI 2025</h3>
-              <p>
-                Hybrid multi-factor network with dynamic sequence modeling for early warning of 
-                intraoperative hypotension; decomposes physiological signals into trend and seasonal 
-                components with patch-based Transformers and symmetric normalization.
-              </p>
-              <a href="https://arxiv.org/abs/2409.11064" target="_blank">Paper →</a>
-            </article>
-            <article
-              class="card focus"
-              data-link="https://arxiv.org/abs/2505.23583"
-              tabindex="0"
-            >
-              <img src="assert/PIR.png" alt="PIR" class="card-image" />
-              <h3>PIR · NeurIPS 2025</h3>
-              <p>
-                Instance-aware post-hoc revision framework for improving forecasting via identification 
-                and revision of biased instances using contextual information.
-              </p>
-              <a href="https://arxiv.org/abs/2505.23583" target="_blank">Paper →</a>
-            </article>
-            <article
-              class="card focus"
-              data-link="https://arxiv.org/abs/2402.16516"
-              tabindex="0"
-            >
-              <img src="assert/gpht.png" alt="GPHT" class="card-image" />
-              <h3>GPHT · SIGKDD 2024</h3>
-              <p>
-                Generative pretrained hierarchical transformer for forecasting, employing mixed dataset 
-                pretraining and autoregressive generation for arbitrary horizon settings.
-              </p>
-              <a href="https://arxiv.org/abs/2402.16516" target="_blank">Paper →</a>
-            </article>
-            <article
-              class="card focus"
-              data-link="https://proceedings.neurips.cc/paper_files/paper/2023/hash/2e19dab94882bc95ed094c4399cfda02-Abstract-Conference.html"
-              tabindex="0"
-            >
-              <img src="assert/san.png" alt="SAN" class="card-image" />
-              <h3>SAN · NeurIPS 2023</h3>
-              <p>
-                Adaptive normalization for non-stationary time series forecasting from a temporal slice 
-                perspective, eliminating non-stationarity at local slice level.
-              </p>
-              <a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/2e19dab94882bc95ed094c4399cfda02-Abstract-Conference.html" target="_blank">Paper →</a>
-            </article>
-          </div>
-        </div>
-
-        <!-- Survey Section -->
-        <div>
-          <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--text);">Survey</h3>
-          <div class="research-grid">
-            <article
-              class="card focus"
-              data-link="https://www.techrxiv.org/users/909144/articles/1283131-a-comprehensive-survey-of-time-series-forecasting-concepts-challenges-and-future-directions"
-              tabindex="0"
-            >
-              <img src="assert/survey.png" alt="Time Series Survey" class="card-image" />
-              <h3>A Comprehensive Survey of Time Series Forecasting · Preprint</h3>
-              <p>
-                Examines key entities in TSF and their characteristics, introduces a general problem formulation 
-                and challenge analysis, proposes a taxonomy classifying methodologies from preprocessing and forecasting 
-                perspectives, and highlights emerging topics like transfer learning and trustworthy forecasting.
-              </p>
-              <a href="https://www.techrxiv.org/users/909144/articles/1283131-a-comprehensive-survey-of-time-series-forecasting-concepts-challenges-and-future-directions" target="_blank">Paper →</a>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="highlights" class="section highlights">
-        <div class="section-header">
-          <p class="eyebrow">Timeline</p>
-          <h2>Milestones in Time Series Research</h2>
-          <p>
-            Key publications from 2023 to 2026 across classification, forecasting, and representation learning.
-          </p>
-        </div>
-        <div class="timeline">
-          <article class="milestone">
-            <div>
-              <p class="milestone-year">2023</p>
-              <h3>SAN · NeurIPS 2023</h3>
-              <p>
-                Introduced adaptive normalization for non-stationary time series forecasting, 
-                addressing distribution shifts through temporal slice-level normalization.
-              </p>
-            </div>
-            <a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/2e19dab94882bc95ed094c4399cfda02-Abstract-Conference.html" target="_blank">Paper →</a>
-          </article>
-          <article class="milestone">
-            <div>
-              <p class="milestone-year">2023</p>
-              <h3>FormerTime · WWW 2023</h3>
-              <p>
-                Proposed hierarchical multi-scale representation for multivariate time series 
-                classification, establishing foundation for multi-granularity temporal modeling.
-              </p>
-            </div>
-            <a href="https://arxiv.org/abs/2302.09818" target="_blank">Paper →</a>
-          </article>
-          <article class="milestone">
-            <div>
-              <p class="milestone-year">2024</p>
-              <h3>GPHT · SIGKDD 2024</h3>
-              <p>
-                Developed generative pretrained hierarchical transformer enabling single model 
-                for arbitrary horizon forecasting through mixed dataset pretraining.
-              </p>
-            </div>
-            <a href="https://arxiv.org/abs/2402.16516" target="_blank">Paper →</a>
-          </article>
-          <article class="milestone">
-            <div>
-              <p class="milestone-year">2025</p>
-              <h3>InstructTime · WSDM 2025 (Best of WSDM)</h3>
-              <p>
-                Awarded Best of WSDM for reformulating classification as multimodal generative task, 
-                demonstrating potential for universal foundation models in time series.
-              </p>
-            </div>
-            <a href="https://arxiv.org/abs/2403.12371" target="_blank">Paper →</a>
-          </article>
-          <article class="milestone">
-            <div>
-              <p class="milestone-year">2025</p>
-              <h3>InstructTime++ · Preprint</h3>
-              <p>
-                Extends InstructTime with implicit feature enhancement for superior time series classification.
-              </p>
-            </div>
-            <a href="https://arxiv.org/abs/2601.14968" target="_blank">Paper →</a>
-          </article>
-          <article class="milestone">
-            <div>
-              <p class="milestone-year">2025</p>
-              <h3>CrossTimeNet · WSDM 2025</h3>
-              <p>
-                Cross-domain pre-training with LMs for transferable time series representations via 
-                vector quantization tokenization and self-supervised recovery objective.
-              </p>
-            </div>
-            <a href="https://github.com/Mingyue-Cheng/CrossTimeNet" target="_blank">Code →</a>
-          </article>
-          <article class="milestone">
-            <div>
-              <p class="milestone-year">2025</p>
-              <h3>TimeDART · ICML 2025</h3>
-              <p>
-                Unified diffusion and autoregressive paradigms for self-supervised representation 
-                learning, capturing both global trends and local patterns.
-              </p>
-            </div>
-            <a href="https://arxiv.org/abs/2410.05711" target="_blank">Paper →</a>
-          </article>
-          <article class="milestone">
-            <div>
-              <p class="milestone-year">2025</p>
-              <h3>TableTime · CIKM 2025</h3>
-              <p>
-                Enabled zero-shot classification through table understanding reformulation, 
-                achieving natural alignment with LLM semantic space.
-              </p>
-            </div>
-            <a href="https://arxiv.org/abs/2411.15737" target="_blank">Paper →</a>
-          </article>
-          <article class="milestone">
-            <div>
-              <p class="milestone-year">2025</p>
-              <h3>CastMind</h3>
-              <p>
-                Interaction-driven agentic reasoning framework for cognition-inspired time series forecasting.
-              </p>
-            </div>
-            <a href="https://arxiv.org/abs/2511.08947" target="_blank">Paper →</a>
-          </article>
-          <article class="milestone">
-            <div>
-              <p class="milestone-year">2025</p>
-              <h3>MemCast</h3>
-              <p>
-                Memory-driven forecasting with experience-conditioned reasoning from historical patterns and reasoning wisdom.
-              </p>
-            </div>
-            <a href="https://anonymous.4open.science/r/MemCast" target="_blank">Code →</a>
-          </article>
-          <article class="milestone">
-            <div>
-              <p class="milestone-year">2025</p>
-              <h3>Time-R1</h3>
-              <p>
-                Slow-thinking approach with reinforced LLMs for multi-step reasoning in time series forecasting.
-              </p>
-            </div>
-            <a href="https://arxiv.org/abs/2506.10630" target="_blank">Paper →</a>
-          </article>
-          <article class="milestone">
-            <div>
-              <p class="milestone-year">2025</p>
-              <h3>TokenCast</h3>
-              <p>
-                LLM-driven context-aware forecasting via symbolic discretization and unified semantic space.
-              </p>
-            </div>
-            <a href="https://arxiv.org/abs/2508.09191" target="_blank">Paper →</a>
-          </article>
-          <article class="milestone">
-            <div>
-              <p class="milestone-year">2025</p>
-              <h3>PIR · NeurIPS 2025</h3>
-              <p>
-                Model-agnostic framework for instance-aware post-hoc revision, effectively 
-                mitigating instance-level errors in forecasting.
-              </p>
-            </div>
-            <a href="https://arxiv.org/abs/2505.23583" target="_blank">Paper →</a>
-          </article>
-          <article class="milestone">
-            <div>
-              <p class="milestone-year">2025</p>
-              <h3>ConvTimeNet · WWW 2025</h3>
-              <p>
-                Demonstrated viability of pure convolutional models with hierarchical architecture 
-                and deformable patch layers for time series analysis.
-              </p>
-            </div>
-            <a href="https://arxiv.org/abs/2403.01493" target="_blank">Paper →</a>
-          </article>
-          <article class="milestone">
-            <div>
-              <p class="milestone-year">2025</p>
-              <h3>HiTime · ACM TIST (Accepted Nov 2025)</h3>
-              <p>
-                Hierarchical multimodal LLMs with semantic space alignment for time series classification, 
-                bridging temporal representations with generative reasoning.
-              </p>
-            </div>
-            <a href="https://dl.acm.org/doi/abs/10.1145/3785505" target="_blank">Paper →</a>
-          </article>
-          <article class="milestone">
-            <div>
-              <p class="milestone-year">2025</p>
-              <h3>FDF · IJCAI 2025</h3>
-              <p>
-                Flexible decoupled framework combining diffusion for seasonal component and enhanced 
-                linear models for trend, trained end-to-end.
-              </p>
-            </div>
-            <a href="https://arxiv.org/abs/2410.13253" target="_blank">Paper →</a>
-          </article>
-          <article class="milestone">
-            <div>
-              <p class="milestone-year">2025</p>
-              <h3>HMF · IJCAI 2025</h3>
-              <p>
-                Hybrid multi-factor network for early warning of intraoperative hypotension via 
-                dynamic sequence modeling and trend-seasonal decomposition.
-              </p>
-            </div>
-            <a href="https://arxiv.org/abs/2409.11064" target="_blank">Paper →</a>
-          </article>
-          <article class="milestone">
-            <div>
-              <p class="milestone-year">2025</p>
-              <h3>OneCast</h3>
-              <p>
-                Structured decomposition and modular generation for cross-domain time series forecasting: 
-                seasonal projection with basis functions and trend modeling via semantic-aware tokenizer 
-                and masked discrete diffusion.
-              </p>
-            </div>
-            <a href="https://arxiv.org/abs/2510.24028" target="_blank">Paper →</a>
-          </article>
-          <article class="milestone">
-            <div>
-              <p class="milestone-year">2026</p>
-              <h3>TimeMAE · WSDM 2026</h3>
-              <p>
-                Advanced self-supervised learning with decoupled masked autoencoders, learning 
-                transferable representations through bidirectional encoding.
-              </p>
-            </div>
-            <a href="https://arxiv.org/abs/2303.00320" target="_blank">Paper →</a>
-          </article>
-          <article class="milestone">
-            <div>
-              <p class="milestone-year">2026</p>
-              <h3>TimeReasoner · WSDM 2026</h3>
-              <p>
-                Empirical study revealing slow-thinking LLMs' capabilities in temporal reasoning, 
-                paving way for reasoning-based forecasting paradigms.
-              </p>
-            </div>
-            <a href="https://arxiv.org/abs/2505.24511" target="_blank">Paper →</a>
-          </article>
-          <article class="milestone">
-            <div>
-              <p class="milestone-year">—</p>
-              <h3>Comprehensive Survey of Time Series Forecasting</h3>
-              <p>
-                Concepts, challenges, taxonomy, and future directions for time series forecasting research.
-              </p>
-            </div>
-            <a href="https://www.techrxiv.org/users/909144/articles/1283131-a-comprehensive-survey-of-time-series-forecasting-concepts-challenges-and-future-directions" target="_blank">Paper →</a>
-          </article>
-        </div>
-      </section>
-
-      <section id="resources" class="section resources">
-        <div class="section-header">
-          <p class="eyebrow">Resources</p>
-          <h2>Research Directions & Contributions</h2>
-        </div>
-        <div class="resource-grid">
-          <article class="card resource">
-            <h3>Multimodal Language Modeling</h3>
-            <p>
-              Converting time series to discrete tokens and leveraging pre-trained language models 
-              for classification and forecasting tasks.
-            </p>
-          </article>
-          <article class="card resource">
-            <h3>Reasoning-Based Forecasting</h3>
-            <p>
-              Slow-thinking approaches and agentic reasoning frameworks that enable multi-step 
-              reasoning over temporal patterns.
-            </p>
-          </article>
-          <article class="card resource">
-            <h3>Self-Supervised Learning</h3>
-            <p>
-              Masked autoencoders, diffusion models, and hierarchical transformers for learning 
-              transferable time series representations.
-            </p>
-          </article>
-          <article class="card resource">
-            <h3>Comprehensive Surveys</h3>
-            <p>
-              In-depth analysis of time series forecasting concepts, challenges, architectural 
-              trends, and future directions.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section vision">
-        <div class="vision-content">
-          <h2>Advancing Time Series Understanding</h2>
-          <p>
-            We explore novel paradigms for time series analysis, from multimodal language modeling 
-            to reasoning-based forecasting. Our research addresses fundamental challenges in temporal 
-            data understanding, including non-stationarity, long-term dependencies, and contextual integration.
-          </p>
-        </div>
-        <div class="vision-points">
-          <div>
-            <h3>Multimodal Integration</h3>
-            <p>
-              Bridging numerical sequences with contextual features through symbolic discretization 
-              and alignment strategies for enhanced understanding.
-            </p>
-          </div>
-          <div>
-            <h3>Reasoning Capabilities</h3>
-            <p>
-              Developing slow-thinking approaches and memory-driven frameworks that enable explicit 
-              reasoning over temporal dynamics and dependencies.
-            </p>
-          </div>
-          <div>
-            <h3>Transferable Representations</h3>
-            <p>
-              Self-supervised learning methods that learn generalizable patterns across diverse 
-              time series domains and applications.
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer id="contact" class="footer">
-      <div>
-        <p class="eyebrow">Connect</p>
-        <h3>Work with the USTC AGI Time Series Group</h3>
-        <p>
-          We welcome collaborations on time series classification, forecasting, representation learning, 
-          and related research directions.
-        </p>
-      </div>
-      <div class="footer-actions">
-        <a class="btn primary" href="mailto:mycheng@ustc.edu.cn">Email Us</a>
-        <a class="btn ghost" href="https://github.com/USTCAGI" target="_blank"
-          >GitHub</a
-        >
-      </div>
-      <p class="footer-note">
-        © <span id="year"></span> USTC AGI · Licensed under
-        <a
-          href="http://creativecommons.org/licenses/by-sa/4.0/"
-          target="_blank"
-          rel="license"
-          >CC BY-SA 4.0</a
-        >.
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <p class="hero-affiliation">
+        <span class="zh">中国科学技术大学 · 认知智能全国重点实验室</span>
+        <span class="en">University of Science and Technology of China · National Key Laboratory of Cognitive Intelligence</span>
       </p>
-    </footer>
+      <h1 class="hero-title">
+        <span class="zh">时间序列分析方向</span>
+        <span class="en">Time Series Analysis</span>
+      </h1>
+      <p class="hero-desc">
+        <span class="zh">专注于时间序列分析的基础理论与前沿方法，覆盖典型任务、基础模型、分析智能体及领域应用，持续推动时序智能分析技术的研究边界。</span>
+        <span class="en">Dedicated to foundational theory and cutting-edge methods for time series analysis, covering classic tasks, foundation models, analysis agents, and domain applications.</span>
+      </p>
+      <div class="hero-links">
+        <a href="#publications" class="btn btn-primary">
+          <span class="zh">查看论文</span>
+          <span class="en">Publications</span>
+        </a>
+        <a href="https://github.com/USTCAGI" class="btn btn-secondary" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </section>
 
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
+  <!-- News -->
+  <section class="section section-alt" id="news">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="zh">最新动态</span>
+        <span class="en">News</span>
+      </h2>
+      <div class="news-list">
 
-      document.querySelectorAll(".card[data-link]").forEach((card) => {
-        const openLink = () => {
-          const target = card.dataset.link;
-          if (target && target !== "#") {
-            window.open(target, "_blank", "noopener");
-          }
-        };
+        <article class="news-item">
+          <div class="news-date">2026.02</div>
+          <div class="news-content">
+            <h3 class="news-title">
+              <span class="zh">观点论文《Beyond Model-Centric Prediction: Agentic Time Series Forecasting》发布于 arXiv。</span>
+              <span class="en">Our position paper “Beyond Model-Centric Prediction: Agentic Time Series Forecasting” is now available on arXiv.</span>
+            </h3>
+            <p class="news-desc">
+              <span class="zh">该工作系统讨论了时间序列预测从模型中心走向智能体中心的研究趋势，并提出新的问题设定与未来方向。</span>
+              <span class="en">The paper outlines a shift from model-centric forecasting toward agentic workflows, highlighting problem settings and future directions.</span>
+            </p>
+            <div class="news-links">
+              <a href="https://arxiv.org/abs/2602.01776" target="_blank" rel="noopener" class="pub-link">arXiv</a>
+            </div>
+          </div>
+        </article>
 
-        card.addEventListener("click", (event) => {
-          if (event.target.closest("a")) return;
-          openLink();
-        });
+        <article class="news-item">
+          <div class="news-date">2026.01</div>
+          <div class="news-content">
+            <h3 class="news-title">
+              <span class="zh">两篇论文被 WSDM 2026 录用，分别聚焦慢思考 LLM 推理与时序自监督表示学习。</span>
+              <span class="en">Two papers were accepted to WSDM 2026 on slow-thinking LLM reasoning and self-supervised time series representation learning.</span>
+            </h3>
+            <p class="news-desc">
+              <span class="zh">相关成果包括 TimeReasoner 与 TimeMAE，持续推进时序分析与大模型结合的研究。</span>
+              <span class="en">The accepted works include TimeReasoner and TimeMAE, extending our work on time series reasoning and foundation models.</span>
+            </p>
+            <div class="news-links">
+              <a href="https://dl.acm.org/doi/10.1145/3773966.3777931" target="_blank" rel="noopener" class="pub-link">Paper</a>
+              <a href="https://github.com/Mingyue-Cheng/TimeMAE" target="_blank" rel="noopener" class="pub-link">Code</a>
+            </div>
+          </div>
+        </article>
 
-        card.addEventListener("keydown", (event) => {
-          if (event.key === "Enter" && !event.target.closest("a")) {
-            openLink();
-          }
-        });
-      });
-    </script>
-  </body>
+        <article class="news-item">
+          <div class="news-date">2025.01</div>
+          <div class="news-content">
+            <h3 class="news-title">
+              <span class="zh">InstructTime 获评 Best of WSDM 2025，展示了多模态语言建模在时序分类中的潜力。</span>
+              <span class="en">InstructTime was selected as Best of WSDM 2025, demonstrating the value of multimodal language modeling for time series classification.</span>
+            </h3>
+            <p class="news-desc">
+              <span class="zh">该工作探索将时间序列分类重构为与自然语言和视觉语义协同建模的问题。</span>
+              <span class="en">This work reformulates time series classification through joint modeling with language and visual semantics.</span>
+            </p>
+            <div class="news-links">
+              <a href="https://dl.acm.org/doi/abs/10.1145/3701551.3703499" target="_blank" rel="noopener" class="pub-link">Paper</a>
+              <a href="https://github.com/Mingyue-Cheng/InstructTime" target="_blank" rel="noopener" class="pub-link">Code</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Directions -->
+  <section class="section" id="research">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="zh">研究方向</span>
+        <span class="en">Research Areas</span>
+      </h2>
+      <div class="research-grid">
+
+        <div class="research-card">
+          <div class="research-num">01</div>
+          <h3>
+            <span class="zh">时间序列分析基础理论</span>
+            <span class="en">Foundations of Time Series Analysis</span>
+          </h3>
+          <p>
+            <span class="zh">变点检测、谱分析、状态空间模型与统计检验等核心理论方法，构建时序分析的数学基础。</span>
+            <span class="en">Core theoretical methods including change point detection, spectral analysis, state space models, and statistical testing.</span>
+          </p>
+        </div>
+
+        <div class="research-card">
+          <div class="research-num">02</div>
+          <h3>
+            <span class="zh">时间序列典型任务</span>
+            <span class="en">Classic Time Series Tasks</span>
+          </h3>
+          <p>
+            <span class="zh">面向时间序列分类、异常检测与预测等核心任务，探索高效、鲁棒的深度学习建模方法。</span>
+            <span class="en">Deep learning approaches for core tasks: classification, anomaly detection, and forecasting.</span>
+          </p>
+        </div>
+
+        <div class="research-card">
+          <div class="research-num">03</div>
+          <h3>
+            <span class="zh">时序基础模型</span>
+            <span class="en">Foundation Models for Time Series</span>
+          </h3>
+          <p>
+            <span class="zh">自监督预训练与跨域迁移学习，构建可泛化的通用时序表示模型，赋能多任务下游应用。</span>
+            <span class="en">Self-supervised pre-training and cross-domain transfer learning for universal, generalizable time series representations.</span>
+          </p>
+        </div>
+
+        <div class="research-card">
+          <div class="research-num">04</div>
+          <h3>
+            <span class="zh">时序分析智能体</span>
+            <span class="en">Time Series Analysis Agents</span>
+          </h3>
+          <p>
+            <span class="zh">基于大语言模型的时序分析智能体，融合推理能力与领域知识，探索超越传统模型的新范式。</span>
+            <span class="en">LLM-driven agentic frameworks integrating reasoning and domain knowledge for time series analysis beyond conventional models.</span>
+          </p>
+        </div>
+
+        <div class="research-card">
+          <div class="research-num">05</div>
+          <h3>
+            <span class="zh">领域时序数据挖掘</span>
+            <span class="en">Domain-specific Time Series Mining</span>
+          </h3>
+          <p>
+            <span class="zh">电力负荷、能源功率、水文径流、云服务负载等重要领域时序数据的挖掘与预测研究。</span>
+            <span class="en">Applied mining and forecasting for power load, energy generation, hydrological runoff, and cloud workload.</span>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section class="section section-alt" id="publications">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="zh">论文列表</span>
+        <span class="en">Publications</span>
+      </h2>
+
+      <div class="pub-filters">
+        <button class="filter-btn active" data-filter="all"><span class="zh">全部</span><span class="en">All</span></button>
+        <button class="filter-btn" data-filter="forecasting"><span class="zh">预测</span><span class="en">Forecasting</span></button>
+        <button class="filter-btn" data-filter="classification"><span class="zh">分类</span><span class="en">Classification</span></button>
+        <button class="filter-btn" data-filter="anomaly"><span class="zh">异常检测</span><span class="en">Anomaly Detection</span></button>
+        <button class="filter-btn" data-filter="foundation"><span class="zh">基础模型</span><span class="en">Foundation</span></button>
+        <button class="filter-btn" data-filter="agent"><span class="zh">智能体</span><span class="en">Agent</span></button>
+        <button class="filter-btn" data-filter="survey"><span class="zh">综述</span><span class="en">Survey</span></button>
+      </div>
+
+      <!-- Preprint -->
+      <div class="pub-year-group">
+        <h3 class="pub-year">Preprint</h3>
+        <ul class="pub-list">
+
+          <li class="pub-item" data-tags="agent forecasting">
+            <div class="pub-venue-wrap">
+              <span class="pub-venue preprint">Preprint</span>
+              <span class="tag agent">Agent</span>
+            </div>
+            <div class="pub-content">
+              <h4 class="pub-title">Position: Beyond Model-Centric Prediction — Agentic Time Series Forecasting</h4>
+              <p class="pub-authors">Mingyue Cheng, Xiaoyu Tao, Qi Liu, Ze Guo, Enhong Chen</p>
+              <div class="pub-links">
+                <a href="https://arxiv.org/abs/2602.01776" target="_blank" rel="noopener" class="pub-link">arXiv</a>
+                <a href="https://arxiv.org/pdf/2602.01776.pdf" target="_blank" rel="noopener" class="pub-link">PDF</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="pub-item" data-tags="survey forecasting">
+            <div class="pub-venue-wrap">
+              <span class="pub-venue preprint">Preprint</span>
+              <span class="tag survey">Survey</span>
+            </div>
+            <div class="pub-content">
+              <h4 class="pub-title">A Comprehensive Survey of Time Series Forecasting: Concepts, Challenges, and Future Directions</h4>
+              <p class="pub-authors">Mingyue Cheng, Zhiding Liu, Xiaoyu Tao, Qi Liu, Jintao Zhang, Tingyue Pan, Shilong Zhang, Panjing He, Xiaohan Zhang, Daoyu Wang, Jiahao Wang, Enhong Chen</p>
+              <div class="pub-links">
+                <a href="https://d197for5662m48.cloudfront.net/documents/publicationstatus/253323/preprint_pdf/0d1d8e876fb85a212190bc9200dcc3f3.pdf" target="_blank" rel="noopener" class="pub-link">PDF</a>
+                <a href="https://github.com/USTCAGI/Awesome-Papers-Time-Series-Forecasting" target="_blank" rel="noopener" class="pub-link">GitHub</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="pub-item" data-tags="classification">
+            <div class="pub-venue-wrap">
+              <span class="pub-venue preprint">Preprint</span>
+              <span class="tag classification">Classification</span>
+            </div>
+            <div class="pub-content">
+              <h4 class="pub-title">InstructTime++: Time Series Classification with Multimodal Language Modeling via Implicit Feature Enhancement</h4>
+              <p class="pub-authors">Mingyue Cheng, Xiaoyu Tao, Huajian Zhang, Qi Liu, Enhong Chen</p>
+              <div class="pub-links">
+                <a href="https://arxiv.org/pdf/2601.14968" target="_blank" rel="noopener" class="pub-link">PDF</a>
+                <a href="https://github.com/Mingyue-Cheng/InstructTime" target="_blank" rel="noopener" class="pub-link">Code</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="pub-item" data-tags="forecasting agent">
+            <div class="pub-venue-wrap">
+              <span class="pub-venue preprint">Preprint</span>
+              <span class="tag forecasting">Forecasting</span>
+            </div>
+            <div class="pub-content">
+              <h4 class="pub-title">AlphaCast: A Human Wisdom-LLM Intelligence Co-Reasoning Framework for Interactive Time Series Forecasting</h4>
+              <p class="pub-authors">Xiaohan Zhang, Tian Gao, Mingyue Cheng*, Bokai Pan, Ze Guo, Yaguo Liu, Xiaoyu Tao</p>
+              <div class="pub-links">
+                <a href="https://arxiv.org/pdf/2511.08947" target="_blank" rel="noopener" class="pub-link">PDF</a>
+                <a href="https://github.com/SkyeGT/AlphaCast_Official" target="_blank" rel="noopener" class="pub-link">Code</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="pub-item" data-tags="forecasting agent">
+            <div class="pub-venue-wrap">
+              <span class="pub-venue preprint">Preprint</span>
+              <span class="tag forecasting">Forecasting</span>
+            </div>
+            <div class="pub-content">
+              <h4 class="pub-title">Time Series Forecasting as Reasoning: A Slow-Thinking Approach with Reinforced LLMs</h4>
+              <p class="pub-authors">Yitong Zhou, Yucong Luo, Mingyue Cheng*, Jiahao Wang, Daoyu Wang, Tingyue Pan, Jintao Zhang, Qi Liu, Enhong Chen</p>
+              <div class="pub-links">
+                <a href="https://arxiv.org/abs/2508.09191" target="_blank" rel="noopener" class="pub-link">PDF</a>
+                <a href="https://github.com/lqzxt/Time-R1" target="_blank" rel="noopener" class="pub-link">Code</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="pub-item" data-tags="forecasting agent">
+            <div class="pub-venue-wrap">
+              <span class="pub-venue preprint">Preprint</span>
+              <span class="tag forecasting">Forecasting</span>
+            </div>
+            <div class="pub-content">
+              <h4 class="pub-title">MemCast: Memory-Driven Time Series Forecasting with Experience-Conditioned Reasoning</h4>
+              <p class="pub-authors">Xiaoyu Tao, Mingyue Cheng*, Ze Guo, Shuo Yu, Yaguo Liu, Qi Liu, Shijin Wang</p>
+              <div class="pub-links">
+                <a href="https://arxiv.org/abs/2602.03164" target="_blank" rel="noopener" class="pub-link">PDF</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="pub-item" data-tags="forecasting">
+            <div class="pub-venue-wrap">
+              <span class="pub-venue preprint">Preprint</span>
+              <span class="tag forecasting">Forecasting</span>
+            </div>
+            <div class="pub-content">
+              <h4 class="pub-title">From Values to Tokens: An LLM-Driven Framework for Context-aware Time Series Forecasting via Symbolic Discretization</h4>
+              <p class="pub-authors">Xiaoyu Tao, Shilong Zhang, Mingyue Cheng*, Daoyu Wang, Tingyue Pan, Bokai Pan, Changqing Zhang, Shijin Wang</p>
+              <div class="pub-links">
+                <a href="https://github.com/Xiaoyu-Tao/TokenCast" target="_blank" rel="noopener" class="pub-link">Code</a>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- 2026 -->
+      <div class="pub-year-group">
+        <h3 class="pub-year">2026</h3>
+        <ul class="pub-list">
+
+          <li class="pub-item" data-tags="forecasting agent">
+            <div class="pub-venue-wrap">
+              <span class="pub-venue wsdm">WSDM 2026</span>
+              <span class="tag forecasting">Forecasting</span>
+            </div>
+            <div class="pub-content">
+              <h4 class="pub-title">Can Slow-Thinking LLMs Reason Over Time? Empirical Studies in Time Series Forecasting</h4>
+              <p class="pub-authors">Mingyue Cheng, Jiahao Wang, Daoyu Wang, Xiaoyu Tao, Qi Liu*, Enhong Chen</p>
+              <div class="pub-links">
+                <a href="https://dl.acm.org/doi/10.1145/3773966.3777931" target="_blank" rel="noopener" class="pub-link">PDF</a>
+                <a href="https://github.com/realwangjiahao/TimeReasoner" target="_blank" rel="noopener" class="pub-link">Code</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="pub-item" data-tags="foundation anomaly">
+            <div class="pub-venue-wrap">
+              <span class="pub-venue wsdm">WSDM 2026</span>
+              <span class="tag foundation">Foundation</span>
+              <span class="tag anomaly">Anomaly</span>
+            </div>
+            <div class="pub-content">
+              <h4 class="pub-title">TimeMAE: Self-Supervised Representations of Time Series with Decoupled Masked Autoencoders</h4>
+              <p class="pub-authors">Mingyue Cheng, Xiaoyu Tao, Zhiding Liu, Qi Liu*, Hao Zhang, Rujiao Zhang, Enhong Chen</p>
+              <div class="pub-links">
+                <a href="https://arxiv.org/pdf/2303.00320" target="_blank" rel="noopener" class="pub-link">PDF</a>
+                <a href="https://github.com/Mingyue-Cheng/TimeMAE" target="_blank" rel="noopener" class="pub-link">Code</a>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- 2025 -->
+      <div class="pub-year-group">
+        <h3 class="pub-year">2025</h3>
+        <ul class="pub-list">
+
+          <li class="pub-item" data-tags="forecasting">
+            <div class="pub-venue-wrap">
+              <span class="pub-venue neurips">NeurIPS 2025</span>
+              <span class="tag forecasting">Forecasting</span>
+            </div>
+            <div class="pub-content">
+              <h4 class="pub-title">Improving Time Series Forecasting via Instance-aware Post-hoc Revision</h4>
+              <p class="pub-authors">Zhiding Liu, Mingyue Cheng, Guanhao Zhao, Jiqian Yang, Qi Liu, Enhong Chen</p>
+              <div class="pub-links">
+                <a href="https://arxiv.org/pdf/2505.23583" target="_blank" rel="noopener" class="pub-link">PDF</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="pub-item" data-tags="foundation anomaly">
+            <div class="pub-venue-wrap">
+              <span class="pub-venue icml">ICML 2025</span>
+              <span class="tag foundation">Foundation</span>
+              <span class="tag anomaly">Anomaly</span>
+            </div>
+            <div class="pub-content">
+              <h4 class="pub-title">TimeDART: A Diffusion Autoregressive Transformer for Self-supervised Time Series Representation</h4>
+              <p class="pub-authors">Daoyu Wang, Mingyue Cheng*, Zhiding Liu, Qi Liu</p>
+              <div class="pub-links">
+                <a href="https://arxiv.org/html/2410.05711v1" target="_blank" rel="noopener" class="pub-link">PDF</a>
+                <a href="https://github.com/Melmaphother/TimeDART" target="_blank" rel="noopener" class="pub-link">Code</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="pub-item" data-tags="classification">
+            <div class="pub-venue-wrap">
+              <span class="pub-venue wsdm">WSDM 2025</span>
+              <span class="tag classification">Classification</span>
+              <span class="pub-award">Best of WSDM</span>
+            </div>
+            <div class="pub-content">
+              <h4 class="pub-title">InstructTime: Advancing Time Series Classification with Multimodal Language Modeling</h4>
+              <p class="pub-authors">Mingyue Cheng, Yiheng Chen, Qi Liu*, Zhiding Liu, Yucong Luo, Enhong Chen</p>
+              <div class="pub-links">
+                <a href="https://dl.acm.org/doi/abs/10.1145/3701551.3703499" target="_blank" rel="noopener" class="pub-link">PDF</a>
+                <a href="https://github.com/Mingyue-Cheng/InstructTime" target="_blank" rel="noopener" class="pub-link">Code</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="pub-item" data-tags="foundation anomaly">
+            <div class="pub-venue-wrap">
+              <span class="pub-venue wsdm">WSDM 2025</span>
+              <span class="tag foundation">Foundation</span>
+              <span class="tag anomaly">Anomaly</span>
+            </div>
+            <div class="pub-content">
+              <h4 class="pub-title">Cross-Domain Pre-training with Language Models for Transferable Time Series Representations</h4>
+              <p class="pub-authors">Mingyue Cheng, Xiaoyu Tao, Qi Liu*, Hao Zhang, Yiheng Chen, Defu Lian</p>
+              <div class="pub-links">
+                <a href="https://arxiv.org/pdf/2403.12372.pdf" target="_blank" rel="noopener" class="pub-link">PDF</a>
+                <a href="https://github.com/Mingyue-Cheng/CrossTimeNet" target="_blank" rel="noopener" class="pub-link">Code</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="pub-item" data-tags="foundation anomaly">
+            <div class="pub-venue-wrap">
+              <span class="pub-venue www">WWW 2025</span>
+              <span class="tag foundation">Foundation</span>
+              <span class="tag anomaly">Anomaly</span>
+            </div>
+            <div class="pub-content">
+              <h4 class="pub-title">ConvTimeNet: A Deep Hierarchical Fully Convolutional Model for Multivariate Time Series Analysis</h4>
+              <p class="pub-authors">Mingyue Cheng, Jiqian Yang, Tingyue Pan, Qi Liu*, Zhi Li</p>
+              <div class="pub-links">
+                <a href="https://arxiv.org/pdf/2403.01493" target="_blank" rel="noopener" class="pub-link">PDF</a>
+                <a href="https://github.com/Mingyue-Cheng/ConvTimeNet" target="_blank" rel="noopener" class="pub-link">Code</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="pub-item" data-tags="classification">
+            <div class="pub-venue-wrap">
+              <span class="pub-venue cikm">CIKM 2025</span>
+              <span class="tag classification">Classification</span>
+            </div>
+            <div class="pub-content">
+              <h4 class="pub-title">TableTime: Reformulating Time Series Classification as Zero-Shot Table Understanding via Large Language Models</h4>
+              <p class="pub-authors">Jiahao Wang, Mingyue Cheng*, Qingyang Mao, Qi Liu, Feiyang Xu, Xin Li, Enhong Chen</p>
+              <div class="pub-links">
+                <a href="https://arxiv.org/pdf/2411.15737" target="_blank" rel="noopener" class="pub-link">PDF</a>
+                <a href="https://github.com/realwangjiahao/TableTime" target="_blank" rel="noopener" class="pub-link">Code</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="pub-item" data-tags="classification">
+            <div class="pub-venue-wrap">
+              <span class="pub-venue tist">ACM TIST 2025</span>
+              <span class="tag classification">Classification</span>
+            </div>
+            <div class="pub-content">
+              <h4 class="pub-title">Hierarchical Multimodal LLMs with Semantic Space Alignment for Enhanced Time Series Classification</h4>
+              <p class="pub-authors">Xiaoyu Tao, Tingyue Pan, Mingyue Cheng*, Yucong Luo, Qi Liu, Enhong Chen</p>
+              <div class="pub-links">
+                <a href="https://arxiv.org/pdf/2410.18686" target="_blank" rel="noopener" class="pub-link">PDF</a>
+                <a href="https://github.com/Xiaoyu-Tao/HiTime" target="_blank" rel="noopener" class="pub-link">Code</a>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- 2024 -->
+      <div class="pub-year-group">
+        <h3 class="pub-year">2024</h3>
+        <ul class="pub-list">
+
+          <li class="pub-item" data-tags="forecasting">
+            <div class="pub-venue-wrap">
+              <span class="pub-venue kdd">KDD 2024</span>
+              <span class="tag forecasting">Forecasting</span>
+            </div>
+            <div class="pub-content">
+              <h4 class="pub-title">Generative Pretrained Hierarchical Transformer for Time Series Forecasting</h4>
+              <p class="pub-authors">Zhiding Liu, Jiqian Yang, Mingyue Cheng*, Yucong Luo, Zhi Li</p>
+              <div class="pub-links">
+                <a href="https://arxiv.org/pdf/2402.16516.pdf" target="_blank" rel="noopener" class="pub-link">PDF</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="pub-item" data-tags="forecasting anomaly">
+            <div class="pub-venue-wrap">
+              <span class="pub-venue neurips">NeurIPS 2024</span>
+              <span class="tag forecasting">Forecasting</span>
+              <span class="tag anomaly">Anomaly</span>
+            </div>
+            <div class="pub-content">
+              <h4 class="pub-title">Adaptive Normalization for Non-stationary Time Series Forecasting: A Temporal Slice Perspective</h4>
+              <p class="pub-authors">Zhiding Liu, Mingyue Cheng, Zhi Li, Zhenya Huang, Qi Liu, Yanhu Xie, Enhong Chen</p>
+              <div class="pub-links">
+                <a href="https://github.com/icantnamemyself/SAN" target="_blank" rel="noopener" class="pub-link">Code</a>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- 2023 -->
+      <div class="pub-year-group">
+        <h3 class="pub-year">2023</h3>
+        <ul class="pub-list">
+
+          <li class="pub-item" data-tags="classification">
+            <div class="pub-venue-wrap">
+              <span class="pub-venue www">WWW 2023</span>
+              <span class="tag classification">Classification</span>
+            </div>
+            <div class="pub-content">
+              <h4 class="pub-title">FormerTime: Hierarchical Multi-scale Representation for Multivariate Time Series Classification</h4>
+              <p class="pub-authors">Mingyue Cheng, Qi Liu*, Zhiding Liu, Zhi Li, Yucong Luo, Enhong Chen</p>
+              <div class="pub-links">
+                <a href="https://github.com/Mingyue-Cheng/FormerTime" target="_blank" rel="noopener" class="pub-link">Code</a>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Open Source -->
+  <section class="section" id="opensource">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="zh">开源项目</span>
+        <span class="en">Open Source</span>
+      </h2>
+      <div class="project-grid">
+
+        <article class="project-card">
+          <div class="project-head">
+            <span class="project-tag">Classification</span>
+            <h3 class="project-title">InstructTime</h3>
+          </div>
+          <p class="project-desc">
+            <span class="zh">面向时间序列分类的多模态语言建模框架，将时序信号与语言语义空间对齐。</span>
+            <span class="en">A multimodal language modeling framework for time series classification with aligned signal and language semantics.</span>
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/Mingyue-Cheng/InstructTime" target="_blank" rel="noopener" class="btn btn-secondary">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <span class="project-tag">Foundation</span>
+            <h3 class="project-title">TimeMAE</h3>
+          </div>
+          <p class="project-desc">
+            <span class="zh">基于解耦掩码自编码器的时序自监督表示学习项目，支持通用时序特征提取。</span>
+            <span class="en">A self-supervised representation learning project built on decoupled masked autoencoders for general time series encoding.</span>
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/Mingyue-Cheng/TimeMAE" target="_blank" rel="noopener" class="btn btn-secondary">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <span class="project-tag">Forecasting</span>
+            <h3 class="project-title">TimeReasoner</h3>
+          </div>
+          <p class="project-desc">
+            <span class="zh">研究慢思考大语言模型在时间序列预测中推理能力的开源实现。</span>
+            <span class="en">An open implementation for studying slow-thinking LLM reasoning in time series forecasting.</span>
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/realwangjiahao/TimeReasoner" target="_blank" rel="noopener" class="btn btn-secondary">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <span class="project-tag">Resource</span>
+            <h3 class="project-title">Awesome Papers TSF</h3>
+          </div>
+          <p class="project-desc">
+            <span class="zh">面向时间序列预测研究者整理的论文、方向与资源集合，便于快速了解领域进展。</span>
+            <span class="en">A curated collection of papers, research directions, and resources for time series forecasting.</span>
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/USTCAGI/Awesome-Papers-Time-Series-Forecasting" target="_blank" rel="noopener" class="btn btn-secondary">GitHub</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Funding -->
+  <section class="section section-alt" id="funding">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="zh">经费支持</span>
+        <span class="en">Funding</span>
+      </h2>
+      <p class="funding-intro">
+        <span class="zh">本方向的研究工作受到以下机构的支持，特此致谢。</span>
+        <span class="en">Our research is generously supported by the following organizations.</span>
+      </p>
+      <div class="funding-grid">
+
+        <div class="funding-card">
+          <div class="funding-logo">
+            <span class="funding-abbr">NSFC</span>
+          </div>
+          <div class="funding-info">
+            <p class="funding-name">国家自然科学基金委员会</p>
+            <p class="funding-name-en">National Natural Science Foundation of China</p>
+          </div>
+        </div>
+
+        <div class="funding-card">
+          <div class="funding-logo">
+            <span class="funding-abbr">Huawei</span>
+          </div>
+          <div class="funding-info">
+            <p class="funding-name">华为技术有限公司</p>
+            <p class="funding-name-en">Huawei Technologies Co., Ltd.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        <span class="zh">© 2025 时间序列分析方向 · 中国科学技术大学认知智能全国重点实验室</span>
+        <span class="en">© 2025 Time Series Analysis · National Key Laboratory of Cognitive Intelligence, USTC</span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
 </html>
